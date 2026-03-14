@@ -1,20 +1,20 @@
 Time resolution is 1 ps
 
 ==================================================
-   STARTING MEMORY (SDP RAM) VERIFICATION
+   STARTING KPU CLUSTER & KPC VERIFICATION
+   Array: 9 x 6 | Weights Depth: 16
 ==================================================
 
-[25000] PHASE 1: Writing test data to RAM...
+[20000] FSM State: LOAD_WEIGHTS (Filling PE local memories...)
+[180000] FSM State: LOAD_FEAT (Streaming Input Image...)
+[260000] FSM State: COMPUTE (Firing Pipeline...)
 
-[100000] PHASE 2: Reading and verifying data...
-  [PASS] Address 0 -> Expected: 5, Got: 5
-  [PASS] Address 1 -> Expected: 15, Got: 15
-  [PASS] Address 2 -> Expected: 25, Got: 25
-  [PASS] Address 3 -> Expected: 35, Got: 35
-  [PASS] Address 4 -> Expected: 45, Got: 45
+--- Output Verification at 680000 ---
+  Final Cluster Output (adderOutStage2): x
+  [FAIL] Output is unknown ('X'). Check interconnects or FSM.
 
 ==================================================
-  [SUCCESS] ALL MEMORY TESTS PASSED! RAM is working perfectly.
+  [ERROR] Check waveform for pipeline breaks.
 ==================================================
 
-$finish called at time : 150 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" Line 101
+$finish called at time : 680 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_kpu.sv" Line 177

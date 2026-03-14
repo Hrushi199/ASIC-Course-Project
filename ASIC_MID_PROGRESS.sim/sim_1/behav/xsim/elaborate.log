@@ -1,16 +1,37 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Memory_behav xil_defaultlib.tb_Memory xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_KPU_behav xil_defaultlib.tb_KPU xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/KPU_Version1.sv:79]
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/KPU_Version1.sv:93]
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/KPU_Version1.sv:119]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4100] "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_kpu.sv" Line 3. Module tb_KPU has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_kpu.sv" Line 3. Module tb_KPU has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.tb_Memory
+Compiling package xil_defaultlib.pkg_KPU
+Compiling package xil_defaultlib.pkg_PE
+Compiling package xil_defaultlib.pkg_line_memory
+Compiling module xil_defaultlib.KPC
+Compiling module xil_defaultlib.AGU_Read
+Compiling module xil_defaultlib.AGU_Write
+Compiling module xil_defaultlib.Memory(Data_Depth=16,Address_Bit...
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MIN
+Compiling module xil_defaultlib.MAX
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.WAG
+Compiling module xil_defaultlib.RAG
+Compiling module xil_defaultlib.Memory(Data_Depth=128,Address_Bi...
+Compiling module xil_defaultlib.Address_Decoder
+Compiling module xil_defaultlib.Line_Memory
+Compiling module xil_defaultlib.KPU_cluster_default
+Compiling module xil_defaultlib.tb_KPU
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_Memory_behav
+Built simulation snapshot tb_KPU_behav

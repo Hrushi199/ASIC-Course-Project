@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat Mar 14 11:03:33 2026
-# Process ID: 3808
+# Start of session at: Sat Mar 14 10:34:34 2026
+# Process ID: 22524
 # Current directory: C:/Users/hrush/Desktop/ASIC-Course-Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25144 C:\Users\hrush\Desktop\ASIC-Course-Project\ASIC_MID_PROGRESS.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14364 C:\Users\hrush\Desktop\ASIC-Course-Project\ASIC_MID_PROGRESS.xpr
 # Log file: C:/Users/hrush/Desktop/ASIC-Course-Project/vivado.log
 # Journal file: C:/Users/hrush/Desktop/ASIC-Course-Project\vivado.jou
 # Running On: hrushikesh, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 16831 MB
@@ -14,25 +14,19 @@ start_gui
 open_project C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.xpr
 update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_kpu.sv w ]
-add_files -fileset sim_1 C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_kpu.sv
+close [ open C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv w ]
+add_files -fileset sim_1 C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv
 update_compile_order -fileset sim_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top tb_KPU [get_filesets sim_1]
+set_property top tb_Memory [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
 launch_simulation
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/KPU.sv] -no_script -reset -force -quiet
-remove_files  C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/KPU.sv
-update_compile_order -fileset sources_1
-launch_simulation
-launch_simulation
-source tb_KPU.tcl
+source tb_Memory.tcl
 close_sim
 launch_simulation
-source tb_KPU.tcl
+source tb_Memory.tcl
 close_sim
