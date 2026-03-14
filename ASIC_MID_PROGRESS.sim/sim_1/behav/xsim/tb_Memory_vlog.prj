@@ -1,8 +1,7 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../../ASIC/ASIC-Course-Project-main/Line_Memory.sv" \
 "../../../../../ASIC/ASIC-Course-Project-main/Memory.sv" \
-"../../../../../../Downloads/tb_lineMemory.sv" \
+"../../../../ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

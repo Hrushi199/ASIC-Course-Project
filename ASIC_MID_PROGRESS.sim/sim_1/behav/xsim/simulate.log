@@ -1,45 +1,20 @@
 Time resolution is 1 ps
-t=5000 | WA=x RA=x AddrDec=x | O = x x x x x x
-t=15000 | WA=0 RA=0 AddrDec=0 | O = x x x x x x
-t=25000 | WA=0 RA=0 AddrDec=0 | O = x x x x x x
-t=35000 | WA=0 RA=0 AddrDec=0 | O = x x x x x x
-t=45000 | WA=1 RA=0 AddrDec=0 | O = x x x x x x
-t=55000 | WA=2 RA=0 AddrDec=0 | O = x x x x x x
-t=65000 | WA=3 RA=0 AddrDec=0 | O = x x x x x x
-t=75000 | WA=4 RA=0 AddrDec=0 | O = x x x x x x
-t=85000 | WA=5 RA=0 AddrDec=0 | O = x x x x x x
-t=95000 | WA=6 RA=0 AddrDec=0 | O = x x x x x x
-t=105000 | WA=7 RA=0 AddrDec=0 | O = x x x x x x
-t=115000 | WA=8 RA=0 AddrDec=0 | O = x x x x x x
-t=125000 | WA=9 RA=0 AddrDec=0 | O = x x x x x x
-t=135000 | WA=10 RA=0 AddrDec=0 | O = x x x x x x
-t=145000 | WA=11 RA=0 AddrDec=0 | O = x x x x x x
-t=155000 | WA=12 RA=0 AddrDec=0 | O = x x x x x x
-t=165000 | WA=13 RA=0 AddrDec=0 | O = x x x x x x
-t=175000 | WA=14 RA=0 AddrDec=0 | O = x x x x x x
-t=185000 | WA=15 RA=0 AddrDec=0 | O = x x x x x x
-t=195000 | WA=16 RA=0 AddrDec=0 | O = x x x x x x
-t=205000 | WA=17 RA=0 AddrDec=0 | O = x x x x x x
-t=215000 | WA=18 RA=0 AddrDec=0 | O = x x x x x x
-t=225000 | WA=19 RA=0 AddrDec=0 | O = x x x x x x
-t=235000 | WA=20 RA=0 AddrDec=0 | O = x x x x x x
-t=245000 | WA=21 RA=0 AddrDec=0 | O = x x x x x x
-t=255000 | WA=21 RA=0 AddrDec=0 | O = x x x x x x
-t=265000 | WA=21 RA=0 AddrDec=0 | O = x x x x x x
-t=275000 | WA=21 RA=1 AddrDec=1 | O = x x x x x 0
-t=285000 | WA=21 RA=2 AddrDec=2 | O = x x x x 0 0
-t=295000 | WA=21 RA=3 AddrDec=3 | O = x x x 0 0 1
-t=305000 | WA=21 RA=4 AddrDec=4 | O = x x 0 0 1 2
-t=315000 | WA=21 RA=5 AddrDec=5 | O = x 0 0 1 2 3
-t=325000 | WA=21 RA=1 AddrDec=0 | O = 0 0 1 2 3 4
-t=335000 | WA=21 RA=2 AddrDec=1 | O = 0 1 2 3 4 5
-t=345000 | WA=21 RA=3 AddrDec=2 | O = 1 2 3 4 5 1
-t=355000 | WA=21 RA=4 AddrDec=3 | O = 2 3 4 5 1 2
-t=365000 | WA=21 RA=5 AddrDec=4 | O = 3 4 5 1 2 3
-t=375000 | WA=21 RA=6 AddrDec=5 | O = 4 5 1 2 3 4
-t=385000 | WA=21 RA=2 AddrDec=0 | O = 5 1 2 3 4 5
-t=395000 | WA=21 RA=3 AddrDec=1 | O = 1 2 3 4 5 6
-t=405000 | WA=21 RA=4 AddrDec=2 | O = 2 3 4 5 6 2
-t=415000 | WA=21 RA=5 AddrDec=3 | O = 3 4 5 6 2 3
-t=425000 | WA=21 RA=6 AddrDec=4 | O = 4 5 6 2 3 4
-$finish called at time : 435 ns : File "C:/Users/hrush/Downloads/tb_lineMemory.sv" Line 140
+
+==================================================
+   STARTING MEMORY (SDP RAM) VERIFICATION
+==================================================
+
+[25000] PHASE 1: Writing test data to RAM...
+
+[100000] PHASE 2: Reading and verifying data...
+  [PASS] Address 0 -> Expected: 5, Got: 5
+  [PASS] Address 1 -> Expected: 15, Got: 15
+  [PASS] Address 2 -> Expected: 25, Got: 25
+  [PASS] Address 3 -> Expected: 35, Got: 35
+  [PASS] Address 4 -> Expected: 45, Got: 45
+
+==================================================
+  [SUCCESS] ALL MEMORY TESTS PASSED! RAM is working perfectly.
+==================================================
+
+$finish called at time : 150 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" Line 101

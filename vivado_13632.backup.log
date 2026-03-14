@@ -2,16 +2,16 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat Mar 14 10:34:34 2026
-# Process ID: 22524
-# Current directory: C:/Users/hrush/Desktop/ASIC-Course-Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14364 C:\Users\hrush\Desktop\ASIC-Course-Project\ASIC_MID_PROGRESS.xpr
-# Log file: C:/Users/hrush/Desktop/ASIC-Course-Project/vivado.log
-# Journal file: C:/Users/hrush/Desktop/ASIC-Course-Project\vivado.jou
+# Start of session at: Sat Mar 14 01:35:28 2026
+# Process ID: 13632
+# Current directory: C:/Users/hrush/Desktop/ASIC_MID_PROGRESS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35512 C:\Users\hrush\Desktop\ASIC_MID_PROGRESS\ASIC_MID_PROGRESS.xpr
+# Log file: C:/Users/hrush/Desktop/ASIC_MID_PROGRESS/vivado.log
+# Journal file: C:/Users/hrush/Desktop/ASIC_MID_PROGRESS\vivado.jou
 # Running On: hrushikesh, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 16831 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.xpr
+open_project C:/Users/hrush/Desktop/ASIC_MID_PROGRESS/ASIC_MID_PROGRESS.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -59,181 +59,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/hrush/Desktop/ASIC_MID_PROGRESS' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/hrush/Desktop/ASIC_MID_PROGRESS/ASIC_MID_PROGRESS.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 1095.020 ; gain = 282.820
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.215 ; gain = 301.520
 update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv w ]
-add_files -fileset sim_1 C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv
-update_compile_order -fileset sim_1
-set_property top tb_Memory [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Memory'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Memory' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -L uvm -prj tb_Memory_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Memory_behav xil_defaultlib.tb_Memory xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Memory_behav xil_defaultlib.tb_Memory xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.tb_Memory
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_Memory_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Memory_behav -key {Behavioral:sim_1:Functional:tb_Memory} -tclbatch {tb_Memory.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Memory.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-
-==================================================
-   STARTING MEMORY (SDP RAM) VERIFICATION
-==================================================
-
-[20000] PHASE 1: Writing test data to RAM...
-
-[85000] PHASE 2: Reading and verifying data...
-  [FAIL] Address 0 -> Expected: 5, Got: x
-  [PASS] Address 1 -> Expected: 15, Got: 15
-  [PASS] Address 2 -> Expected: 25, Got: 25
-  [PASS] Address 3 -> Expected: 35, Got: 35
-  [PASS] Address 4 -> Expected: 45, Got: 45
-
-==================================================
-  [ERROR] SIMULATION FAILED WITH 1 ERRORS.
-==================================================
-
-$finish called at time : 126 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" Line 143
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Memory_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1164.293 ; gain = 7.559
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Memory'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Memory' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -L uvm -prj tb_Memory_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_Memory
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Memory_behav xil_defaultlib.tb_Memory xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Memory_behav xil_defaultlib.tb_Memory xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/hrush/Desktop/ASIC/ASIC-Course-Project-main/Memory.sv" Line 2. Module Memory doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.tb_Memory
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_Memory_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Memory_behav -key {Behavioral:sim_1:Functional:tb_Memory} -tclbatch {tb_Memory.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Memory.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-
-==================================================
-   STARTING MEMORY (SDP RAM) VERIFICATION
-==================================================
-
-[25000] PHASE 1: Writing test data to RAM...
-
-[100000] PHASE 2: Reading and verifying data...
-  [PASS] Address 0 -> Expected: 5, Got: 5
-  [PASS] Address 1 -> Expected: 15, Got: 15
-  [PASS] Address 2 -> Expected: 25, Got: 25
-  [PASS] Address 3 -> Expected: 35, Got: 35
-  [PASS] Address 4 -> Expected: 45, Got: 45
-
-==================================================
-  [SUCCESS] ALL MEMORY TESTS PASSED! RAM is working perfectly.
-==================================================
-
-$finish called at time : 150 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/ASIC_MID_PROGRESS.srcs/sim_1/new/tb_mem.sv" Line 101
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Memory_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.898 ; gain = 5.887
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 10:59:45 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 01:38:17 2026...
