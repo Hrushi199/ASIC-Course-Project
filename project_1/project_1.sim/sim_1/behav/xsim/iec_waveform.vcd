@@ -1,0 +1,620 @@
+$date
+   Sun Mar 15 17:43:46 2026
+$end
+$version
+  2022.2
+$end
+$timescale
+  1ps
+$end
+$scope module tb_IEC $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # start $end
+$var reg 1 $ layer_config_valid $end
+$var reg 1 % layer_config_ack $end
+$var reg 8 & FClast [7:0] $end
+$var reg 10 ' N_classes [9:0] $end
+$var reg 3 ( layer_comp_type [2:0] $end
+$var reg 16 ) nl [15:0] $end
+$var reg 16 * rl [15:0] $end
+$var reg 8 + layer_num [7:0] $end
+$var reg 1 , done_interrupt $end
+$var reg 10 - CN_DC_proc [9:0] $end
+$var reg 3 . state_out [2:0] $end
+$var reg 144 / kpu_BIAS [143:0] $end
+$var reg 144 0 kpu_I [143:0] $end
+$var reg 864 1 kpu_W [863:0] $end
+$var reg 20 2 kpu_AC_out [19:0] $end
+$var reg 1 3 kpu_valid $end
+$var reg 1 4 kpu_rst $end
+$var reg 16 5 cu_AC_in [15:0] $end
+$var reg 1 6 cu_valid $end
+$var reg 1 7 cu_l_is_FClast $end
+$var reg 10 8 cu_N [9:0] $end
+$var reg 10 9 cu_CN_DC [9:0] $end
+$var reg 1 : cu_result_valid $end
+$var reg 16 ; cu_AC_passthrough [15:0] $end
+$var reg 1 < cu_valid_passthrough $end
+$var reg 1 = cu_rst $end
+$var reg 16 > dram_I_data [15:0] $end
+$var reg 16 ? dram_W_data [15:0] $end
+$var reg 16 @ dram_B_data [15:0] $end
+$var reg 1 A dram_I_valid $end
+$var reg 1 B dram_W_valid $end
+$var reg 1 C dram_B_valid $end
+$var reg 1 D dram_I_req $end
+$var reg 1 E dram_W_req $end
+$var reg 1 F dram_B_req $end
+$var reg 32 G error_count [31:0] $end
+$var reg 3 H kpu_dly [2:0] $end
+$var reg 3 I cu_dly [2:0] $end
+$scope module dut $end
+$var wire 1 J clk $end
+$var wire 1 K rst $end
+$var wire 1 L start $end
+$var wire 1 M layer_config_valid $end
+$var wire 8 N FClast [7:0] $end
+$var wire 10 O N_classes [9:0] $end
+$var wire 3 P layer_comp_type [2:0] $end
+$var wire 16 Q nl [15:0] $end
+$var wire 16 R rl [15:0] $end
+$var wire 8 S layer_num [7:0] $end
+$var reg 1 , done_interrupt $end
+$var reg 1 % layer_config_ack $end
+$var reg 10 - CN_DC_proc [9:0] $end
+$var reg 3 . state_out [2:0] $end
+$var reg 144 / kpu_BIAS [143:0] $end
+$var reg 144 0 kpu_I [143:0] $end
+$var reg 864 1 kpu_W [863:0] $end
+$var wire 20 T kpu_AC_out [19:0] $end
+$var wire 1 U kpu_valid $end
+$var reg 1 4 kpu_rst $end
+$var reg 16 5 cu_AC_in [15:0] $end
+$var reg 1 6 cu_valid $end
+$var reg 1 7 cu_l_is_FClast $end
+$var reg 10 8 cu_N [9:0] $end
+$var wire 10 V cu_CN_DC [9:0] $end
+$var wire 1 W cu_result_valid $end
+$var wire 16 X cu_AC_passthrough [15:0] $end
+$var wire 1 Y cu_valid_passthrough $end
+$var reg 1 = cu_rst $end
+$var wire 16 Z dram_I_data [15:0] $end
+$var wire 1 [ dram_I_valid $end
+$var wire 16 \ dram_W_data [15:0] $end
+$var wire 1 ] dram_W_valid $end
+$var wire 16 ^ dram_B_data [15:0] $end
+$var wire 1 _ dram_B_valid $end
+$var reg 1 D dram_I_req $end
+$var reg 1 E dram_W_req $end
+$var reg 1 F dram_B_req $end
+$var reg 3 ` state [2:0] $end
+$var reg 8 a r_FClast [7:0] $end
+$var reg 10 b r_N_classes [9:0] $end
+$var reg 3 c r_comp_type [2:0] $end
+$var reg 16 d r_nl [15:0] $end
+$var reg 16 e r_rl [15:0] $end
+$var reg 8 f r_layer [7:0] $end
+$var reg 16 g iter_cnt [15:0] $end
+$var reg 16 h prefetch_cnt [15:0] $end
+$var reg 20 i psum_reg [19:0] $end
+$var wire 1 j l_is_FClast $end
+$var wire 1 k last_iter $end
+$upscope $end
+$scope task set_layer_config $end
+$var reg 8 l lnum [7:0] $end
+$var reg 3 m ctype [2:0] $end
+$var reg 16 n n_l [15:0] $end
+$var reg 16 o r_l [15:0] $end
+$var reg 8 p fc_last [7:0] $end
+$var reg 10 q n_cls [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+x%
+b1 &
+b1100100 '
+b0 (
+b11 )
+b1 *
+b0 +
+x,
+bx -
+bx .
+b0 /
+b101000000000000010100000000000001010000000000000101000000000000010100000000000001010000000000000101000000000000010100000000000001010 0
+b100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001 1
+bx 2
+x3
+x4
+bx 5
+x6
+x7
+bx 8
+bx 9
+x:
+b0 ;
+0<
+x=
+b1010 >
+b1 ?
+b0 @
+1A
+1B
+1C
+xD
+xE
+xF
+b0 G
+bx H
+bx I
+0J
+1K
+0L
+0M
+b1 N
+b1100100 O
+b0 P
+b11 Q
+b1 R
+b0 S
+bx T
+xU
+bx V
+xW
+b0 X
+0Y
+b1010 Z
+1[
+b1 \
+1]
+b0 ^
+1_
+bx `
+bx a
+bx b
+bx c
+bx d
+bx e
+bx f
+bx g
+bx h
+bx i
+xj
+xk
+b0 l
+b0 m
+b0 n
+b0 o
+b0 p
+b0 q
+$end
+#5000
+1!
+0%
+0,
+b0 -
+b0 .
+b1100100 2
+03
+14
+b0 5
+06
+07
+b101010 9
+0:
+1=
+0D
+0E
+0F
+b0 H
+b0 I
+1J
+b1100100 T
+0U
+b101010 V
+0W
+b0 `
+b0 g
+b0 h
+b0 i
+#10000
+0!
+0J
+#15000
+1!
+0%
+1J
+#20000
+0!
+0J
+#25000
+1!
+0"
+0%
+04
+0=
+1J
+0K
+#30000
+0!
+0J
+#35000
+1!
+0%
+b1 H
+1J
+#40000
+0!
+0J
+#45000
+1!
+1#
+0%
+b1 .
+1E
+1F
+b10 H
+1J
+1L
+b1 `
+#50000
+0!
+0J
+#55000
+1!
+1$
+1%
+b1 &
+b1100100 '
+b0 (
+b11 )
+b1 *
+b0 +
+b10 .
+13
+14
+b1100100 8
+1D
+0E
+0F
+1J
+1M
+1U
+b10 `
+b1 a
+b1100100 b
+b0 c
+b11 d
+b1 e
+b0 f
+0j
+0k
+#60000
+0!
+0J
+#65000
+1!
+0$
+0%
+b11 .
+03
+04
+b0 H
+1J
+0M
+0U
+b11 `
+b1 h
+#70000
+0!
+0J
+#75000
+1!
+0%
+b1 H
+1J
+#80000
+0!
+0J
+#85000
+1!
+0%
+b10 H
+1J
+#90000
+0!
+0J
+#95000
+1!
+0%
+13
+1J
+1U
+#100000
+0!
+0J
+#105000
+1!
+0%
+b1100100 5
+1J
+b1 g
+b1100100 i
+#110000
+0!
+0J
+#115000
+1!
+0%
+1J
+b10 g
+1k
+#120000
+0!
+0J
+#125000
+1!
+0%
+b100 .
+0D
+1J
+b100 `
+#130000
+0!
+0J
+#135000
+1!
+1$
+0%
+b1 &
+b1100100 '
+b1 (
+b10 )
+b1 *
+b1 +
+b1 .
+14
+b0 5
+1E
+1F
+1J
+1M
+b1 P
+b10 Q
+b1 S
+b1 `
+b0 g
+b0 h
+b0 i
+0k
+#140000
+0!
+0J
+#145000
+1!
+1%
+b10 .
+03
+14
+1D
+0E
+0F
+b0 H
+1J
+0U
+b10 `
+b1 c
+b10 d
+b1 f
+1j
+#150000
+0!
+0J
+#155000
+1!
+0$
+0%
+b11 .
+04
+1J
+0M
+b11 `
+b1 h
+#160000
+0!
+0J
+#165000
+1!
+0%
+b1 H
+1J
+#170000
+0!
+0J
+#175000
+1!
+0%
+b10 H
+1J
+#180000
+0!
+0J
+#185000
+1!
+0%
+13
+1J
+1U
+#190000
+0!
+0J
+#195000
+1!
+0%
+b1100100 5
+1J
+b1 g
+b1100100 i
+1k
+#200000
+0!
+0J
+#205000
+1!
+0%
+b101 .
+16
+17
+0D
+1J
+b101 `
+#210000
+0!
+0J
+#215000
+1!
+0%
+b1 I
+1J
+#220000
+0!
+0J
+#225000
+1!
+0%
+b10 I
+1J
+#230000
+0!
+0J
+#235000
+1!
+0%
+b11 I
+1J
+#240000
+0!
+0J
+#245000
+1!
+0%
+1:
+1J
+1W
+#250000
+0!
+0J
+#255000
+1!
+0%
+b101010 -
+b110 .
+06
+07
+1J
+b110 `
+#260000
+0!
+0J
+#265000
+1!
+0%
+1,
+1=
+1J
+#270000
+0!
+0J
+#275000
+1!
+0%
+0:
+1=
+b0 I
+1J
+0W
+#276000
+0#
+0L
+#280000
+0!
+0J
+#285000
+1!
+0%
+b0 .
+1=
+1J
+b0 `
+#290000
+0!
+0J
+#295000
+1!
+0%
+0,
+0=
+1J
+#300000
+0!
+0J
+#305000
+1!
+0%
+1J
+#310000
+0!
+0J
+#315000
+1!
+0%
+1J
+#320000
+0!
+0J
+#325000
+1!
+0%
+1J
+#330000
+0!
+0J
+#335000
+1!
+0%
+1J
+#340000
+0!
+0J
+#345000
+1!
+0%
+1J
+#350000
+0!
+0J
+#355000
+1!
+0%
+1J
+#360000
+0!
+0J
+#365000
+1!
+0%
+1J
+#370000
+0!
+0J
+#375000
+1!
+0%
+1J

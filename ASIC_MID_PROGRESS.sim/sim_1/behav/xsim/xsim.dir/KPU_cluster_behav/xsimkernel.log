@@ -1,7 +1,0 @@
-Running: xsim.dir/KPU_cluster_behav/xsimk.exe -simmode gui -wdb KPU_cluster_behav.wdb -simrunnum 0 -socket 55824
-Design successfully loaded
-Design Loading Memory Usage: 11992 KB (Peak: 11992 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 12936 KB (Peak: 12936 KB)
-Simulation CPU Usage: 31 ms
