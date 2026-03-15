@@ -32,8 +32,8 @@
 package pkg_KPU;
     parameter int M           = 9;
     parameter int M_Bit_Width = 4;
-    parameter int N           = 6;
-    parameter int N_Bit_Width = 3;
+    parameter int N           = 96;
+    parameter int N_Bit_Width = 7;
     parameter int K           = 16;
     parameter int Z           = 16;
     parameter int Z_Bit_Width = 4;

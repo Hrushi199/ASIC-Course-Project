@@ -1,38 +1,29 @@
 Time resolution is 1 ps
 
 ================================================================
-  CNN INFERENCE ENGINE - PERFORMANCE METRICS
-  NPE=54  fclk=100 MHz  Q8.8  2-layer test
+  864 PE - DEBUG RUN
+  NPE=864  N_classes=5  nl=16(Conv)+5(FC)
 ================================================================
 
-  [MARKER] KPU load_done   t=235000 ps
-  [MARKER] KPU load_done   t=585000 ps
-  [MARKER] CU result_valid t=695000 ps
-  [MARKER] done_interrupt  t=715000 ps
+  [DBG CLASSIFY] t=2636000  classify_cnt=0  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=0  CN_DC_r=0  class_done=0
+  [DBG] Entered CLASSIFY: psum_reg=63  r_N_classes=5  classify_cnt=0
+  [DBG CLASSIFY] t=2646000  classify_cnt=1  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=0  class_done=0
+  [DBG CLASSIFY] t=2656000  classify_cnt=2  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=1  class_done=0
+  [DBG CLASSIFY] t=2666000  classify_cnt=3  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=2  class_done=0
+  [DBG CLASSIFY] t=2676000  classify_cnt=4  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=3  class_done=0
+  [DBG CLASSIFY] t=2686000  classify_cnt=5  r_N_classes=5  cu_valid=0  cu_AC_in=63  ACMax=63  CN_DC_r=4  class_done=0
+  [DBG CLASSIFY] t=2696000  classify_cnt=5  r_N_classes=5  cu_valid=0  cu_AC_in=63  ACMax=63  CN_DC_r=4  class_done=1
+
 ================================================================
   RESULTS
 ================================================================
   Detected class          : 4
   Inference correct       : YES [PASS]
-  ----------------------------------------------------------------
-  --- Latency ---
-  Total latency           : 660 ns
-  Total cycles            : 66  @ 100 MHz
-  ----------------------------------------------------------------
-  --- Throughput ---
-  Frame rate (sim)        : 1515151.52 fps
-  ----------------------------------------------------------------
-  --- TOPS  (2 x NPE x fclk x Omega x sigma) ---
-  NPE  (M x N)            : 54
-  fclk                    : 100 MHz
-  Omega (PE efficiency)   : 1.00
-  Active COMPUTE cycles   : 53 / 66
-  sigma (time efficiency) : 0.8030  (80.3%)
-  Theta_T @ 100MHz 54PE   : 0.008673 TOPS
-  ----------------------------------------------------------------
-  --- Scaled to paper ASIC ---
-  Theta_T @ 1.25GHz 54PE  : 0.1084 TOPS
-  Theta_T @ 3.85GHz 864PE : 6.6528 TOPS  (paper: 6.65 TOPS)
+  Total latency           : 2660 ns / 266 cycles
+  Active COMPUTE cycles   : 253 / 266
+  sigma                   : 0.9511 (95.1%)
+  Theta_T @ 100MHz 864PE  : 0.164355 TOPS
+  Theta_T @ 3.85GHz 864PE : 6.6528 TOPS  (paper: 6.65)
 ================================================================
 
-$finish called at time : 826 ns : File "C:/Users/hrush/Desktop/ASIC_TEST/project_1/project_1.srcs/sim_1/new/tb_metric.sv" Line 187
+$finish called at time : 2826 ns : File "C:/Users/hrush/Desktop/ASIC_BACKUP/project_1/project_1.srcs/sim_1/new/tb_metric.sv" Line 165
