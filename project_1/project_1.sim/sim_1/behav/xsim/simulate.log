@@ -1,29 +1,39 @@
 Time resolution is 1 ps
 
 ================================================================
-  864 PE - DEBUG RUN
-  NPE=864  N_classes=5  nl=16(Conv)+5(FC)
+  IMAGE CLASSIFICATION TEST
+================================================================
+  Input image (3x3 grayscale, pixels 1-9):
+    [ 1  2  3 ]
+    [ 4  5  6 ]
+    [ 7  8  9 ]
+  Using average pixel = 5 (broadcast to all M rows)
+  9 classes, filter weights = [1,2,...,9] Q8.8
+  Expected AC per class: 4320, 8640, ..., 38880
+  Expected classification: class 8 (weight=9, max AC=38880)
 ================================================================
 
-  [DBG CLASSIFY] t=2636000  classify_cnt=0  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=0  CN_DC_r=0  class_done=0
-  [DBG] Entered CLASSIFY: psum_reg=63  r_N_classes=5  classify_cnt=0
-  [DBG CLASSIFY] t=2646000  classify_cnt=1  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=0  class_done=0
-  [DBG CLASSIFY] t=2656000  classify_cnt=2  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=1  class_done=0
-  [DBG CLASSIFY] t=2666000  classify_cnt=3  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=2  class_done=0
-  [DBG CLASSIFY] t=2676000  classify_cnt=4  r_N_classes=5  cu_valid=1  cu_AC_in=63  ACMax=63  CN_DC_r=3  class_done=0
-  [DBG CLASSIFY] t=2686000  classify_cnt=5  r_N_classes=5  cu_valid=0  cu_AC_in=63  ACMax=63  CN_DC_r=4  class_done=0
-  [DBG CLASSIFY] t=2696000  classify_cnt=5  r_N_classes=5  cu_valid=0  cu_AC_in=63  ACMax=63  CN_DC_r=4  class_done=1
+  [INFO] Layer 0 (Conv): computing 9 class activations...
+  [INFO] Inference complete
 
 ================================================================
-  RESULTS
+  CLASSIFICATION RESULT
 ================================================================
-  Detected class          : 4
-  Inference correct       : YES [PASS]
-  Total latency           : 2660 ns / 266 cycles
-  Active COMPUTE cycles   : 253 / 266
-  sigma                   : 0.9511 (95.1%)
-  Theta_T @ 100MHz 864PE  : 0.164355 TOPS
-  Theta_T @ 3.85GHz 864PE : 6.6528 TOPS  (paper: 6.65)
+  Detected class  : 8
+  Expected class  : 8  (highest weight = 9, max activation)
+  Result          : [PASS] Correct classification!
 ================================================================
 
-$finish called at time : 2826 ns : File "C:/Users/hrush/Desktop/ASIC_BACKUP/project_1/project_1.srcs/sim_1/new/tb_metric.sv" Line 165
+  Per-class activation breakdown:
+  Class | Weight | Expected AC | Note
+  ------|--------|-------------|-----
+     0  |    1   |      4320   |                   
+     1  |    2   |      8640   |                   
+     2  |    3   |     12960   |                   
+     3  |    4   |     17280   |                   
+     4  |    5   |     21600   |                   
+     5  |    6   |     25920   |                   
+     6  |    7   |     30240   |                   
+     7  |    8   |     34560   |                   
+     8  |    9   |     38880   | <-- max (detected)
+$finish called at time : 2836 ns : File "C:/Users/hrush/Desktop/ASIC-Course-Project/project_1/project_1.srcs/sim_1/new/tb_image_test.sv" Line 253
